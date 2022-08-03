@@ -27,15 +27,8 @@ plugins.security.ssl.http.pemtrustedcas_filepath: certificates/root-ca.pem
 
 plugins.security.restapi.roles_enabled: ["all_access"]
 
-# plugins.security.ssl.http.pemtrustedcas_filepath: certificates/ca/ca.pem
-# plugins.security.ssl.transport.pemtrustedcas_filepath: certificates/ca/ca.pem
-# plugins.security.authcz.admin_dn:
-#   - 'CN=ADMIN,O=UN,L=UN,ST=UN,C=UN'
-# plugins.security.nodes_dn:
-#   - 'CN=os,O=UN,L=UN,ST=UN,C=UN'
-
 plugins.security.authcz.admin_dn:
-  - 'CN=admin.example.local,OU=DevOps,O=Wasabi,L=Utrecht,ST=Utrecht,C=NL'
+  - 'EMAILADDRESS=admin@example.com,CN=admin.example.local,OU=DevOps,O=Wasabi,L=Utrecht,ST=Utrecht,C=NL'
 plugins.security.nodes_dn:
   - 'CN=os01,OU=DevOps,O=Wasabi,L=Utrecht,ST=Utrecht,C=NL'
   - 'CN=os02,OU=DevOps,O=Wasabi,L=Utrecht,ST=Utrecht,C=NL'
