@@ -23,9 +23,9 @@ config:
           challenge: false
           config:
             openid_connect_idp:
-              enable_ssl: false
+              enable_ssl: true
               verify_hostnames: false
-              pemtrustedcas_filepath: /usr/share/opensearch/config/certificates/root-ca.pem
+              pemtrustedcas_filepath: /usr/share/opensearch/config/certificates/rootCa.crt
             subject_key: preferred_username
             roles_key: roles
             openid_connect_url: https://keycloak.example.com/auth/realms/monitoring/.well-known/openid-configuration
