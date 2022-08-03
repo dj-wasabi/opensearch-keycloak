@@ -1,0 +1,3 @@
+#!/bin/basj
+# sudo docker compose exec os01 bash -c "cd plugins/opensearch-security/tools/ && chmod +x securityadmin.sh && bash ./securityadmin.sh -cd ../../../config/opensearch-security/ -dci -icl -nhnv -cacert ../../../config/certificates/ca/ca.pem -cert ../../../config/certificates/ca/admin.pem -key ../../../config/certificates/ca/admin.key -h localhost"
+docker compose exec os01 bash -c "cd plugins/opensearch-security/tools/ && chmod +x securityadmin.sh && bash ./securityadmin.sh -cd ../../../config/opensearch-security/ -icl -nhnv -cacert ../../../config/certificates/ca/ca.pem -cert ../../../config/certificates/ca/admin.pem -key ../../../config/certificates/ca/admin.key -h localhost"
