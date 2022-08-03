@@ -15,12 +15,12 @@ opensearch.ssl.certificateAuthorities:
 opensearch.ssl.verificationMode: full
 
 opensearch.requestHeadersWhitelist: ["securitytenant", "Authorization"]
-opensearch_security.multitenancy.enabled: true
+opensearch_security.multitenancy.enabled: false
 # opensearch_security.multitenancy.tenants.enable_global: true
 # opensearch_security.multitenancy.tenants.enable_private: false
 opensearch_security.multitenancy.tenants.preferred: ["Private", "Global"]
 opensearch_security.readonly_mode.roles: ["kibana_read_only"]
-opensearch_security.multitenancy.enable_filter: false
+# opensearch_security.multitenancy.enable_filter: false
 
 opensearch_security.auth.type: openid
 opensearch_security.openid.connect_url: https://keycloak.example.com/auth/realms/monitoring/.well-known/openid-configuration

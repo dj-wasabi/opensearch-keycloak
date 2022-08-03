@@ -23,7 +23,7 @@ plugins.security.ssl.transport.enforce_hostname_verification: false
 plugins.security.ssl.http.pemkey_filepath: certificates/node2-key.pem
 plugins.security.ssl.http.pemcert_filepath: certificates/node2.pem
 plugins.security.ssl.http.enabled: true
-plugins.security.ssl.http.pemtrustedcas_filepath: certificates/rootCa.crt
+plugins.security.ssl.http.pemtrustedcas_filepath: certificates/root-ca.pem
 
 plugins.security.restapi.roles_enabled: ["all_access"]
 
