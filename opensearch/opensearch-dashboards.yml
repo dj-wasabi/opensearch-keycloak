@@ -6,8 +6,8 @@ opensearch.username: kibanaserver
 opensearch.password: kibanaserver
 
 server.ssl.enabled: true
-server.ssl.certificate: /usr/share/opensearch-dashboards/config/certificates/os-dashboards.pem
-server.ssl.key: /usr/share/opensearch-dashboards/config/certificates/os-dashboards.key
+server.ssl.certificate: /usr/share/opensearch-dashboards/config/certificates/dashboard.crt
+server.ssl.key: /usr/share/opensearch-dashboards/config/certificates/dashboard.pem
 
 # Encrypt traffic between OpenSearch-Dashboards and Opensearch
 opensearch.ssl.certificateAuthorities:
